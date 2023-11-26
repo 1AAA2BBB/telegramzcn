@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>帮助中心 - Telegram中文版官网</title>
+<meta name="keywords" content="telegram,telegram汉化,telegram中文版,telegram下载,telegram中文版安卓,telegram中文版ios,telegram中文版mac,电报下载">
+<meta name="description" content="使用Telegram中文版，您可以发送任何类型的消息，照片，视频和文件（文档，zip，mp3等），以及为多达100 双向联系人,连接中, 登录不上, 收不到验证码, 会员等问题 国际品牌，安全有保证." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@trustwalletapp" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Telegram中文版" />
+<meta property="al:ios:url" content="trust://" />
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+<meta name="theme-color" content="#3375BB">
+<script type="text/javascript" src="/js/plausible.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script type="application/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      document.getElementById('navbarToggle').addEventListener('click', function() {
+        var el = document.getElementById('navbarSupportedContent');
+        var toggled = window.getComputedStyle(el).display == 'block';
+        if (toggled) {
+          el.style.display = "none";
+        } else {
+          el.style.display = "block";
+        }
+      })
+      //Add Huawei download button based on device.
+      var result = new UAParser().getResult();
+      var apple = document.getElementsByClassName("apple");
+      var huawei = document.getElementsByClassName("huawei");
+      var download = document.getElementsByClassName("downloadapp-native");
+    });
+  </script>
+<link rel="stylesheet" href="/desktop/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/desktop/outer.css" type="text/css">
+<link rel="stylesheet" href="/desktop/index.css" type="text/css">
+<script src="./desktop/saved_resource" async="" type="text/javascript"></script>
+<script type="text/javascript" src="/desktop/jQuery.min.js"></script>
+<script type="text/javascript" src="/desktop/bootstrap.min.js"></script>
+<!--<![endif]>-->
+<script type="text/javascript">
+var lastFaqClick=null;//上次点击的faq
+window.onload=function(){
+var faq=document.getElementById("faq");
+var dls=faq.getElementsByTagName("dl");
+for (var i=0,dl;dl=dls[i];i++){
+var dt=dl.getElementsByTagName("dt")[0];//取得标题
+dt.id = "faq_dt_"+(Math.random()*100);
+dt.onclick=function(){
+var p=this.parentNode;//取得父节点
+if (lastFaqClick!=null&&lastFaqClick.id!=this.id){
+var dds=lastFaqClick.parentNode.getElementsByTagName("dd");
+for (var i=0,dd;dd=dds[i];i++)
+dd.style.display='none';
+}
+lastFaqClick=this;
+var dds=p.getElementsByTagName("dd");//取得该父节点所有的子节点，也就是所有的答案
+var tmpDisplay='none';
+if (gs(dds[0],'display')=='none')
+tmpDisplay='block';
+for (var i=0;i<dds.length;i++)
+dds[i].style.display=tmpDisplay;
+}
+}
+}
+/**
+*取得元素的真实css属性
+*written in 06.7 sheneyan
+*/
+function gs(d,a){
+if (d.currentStyle){ 
+var curVal=d.currentStyle[a]
+}else{ 
+var curVal=document.defaultView.getComputedStyle(d, null)[a]
+} 
+return curVal;
+}
+</script>
+<style type="text/css">
+*,html,body{margin:0;padding:0}
+#faq dt{font-weight:bold;cursor:pointer}
+#faq dd{display:none;}
+</style>
+</head>
+<div class="container productuse">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="client-box">
+        <div class="client-img"> <img src="/desktop/win_icon.png" alt=""> </div>
+        <div class="client-info">
+          <h4>Windows 客户端</h4>
+          <p><a target="_blank" href="/download.html" style="margin-right: 15px;" class="know_about">下载地址1</a><a target="_blank" href="/download.html" class="know_about" data-toggle="tooltip" data-placement="bottom" data-original-title="" title="">下载地址2</a> </p>
+          <!--<p>兼容windows7/10/11</p>-->
+         </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="client-box">
+        <div class="client-img"> <img src="/desktop/and_icon.png" alt=""> </div>
+        <div class="client-info">
+          <h4>Android 客户端</h4>
+          <p><a target="_blank" style="margin-right: 15px;" class="know_about" href="/download.html">点击下载</a><a target="_blank" href="/download.html" class="know_about">备用下载</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="client-box">
+        <div class="client-img"> <img src="/desktop/ios_icon.png" alt=""> </div>
+        <div class="client-info">
+          <h4>iOS 客户端</h4>
+          <p>兼容 iPhone/iPad</p>
+           <a target="_blank" href="/download.html" target="_blank" style="margin-right: 15px;" class="know_about">点击下载</a></div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="client-box">
+        <div class="client-img"> <img src="/desktop/mac_icon.png" alt=""> </div>
+        <div class="client-info">
+          <h4>Mac 客户端</h4>
+          <p>支持Mac 10.10以上系统</p>
+		
+          <a target="_blank" href="/download.html" target="_blank" style="margin-right: 15px;" class="know_about">点击下载</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<div class="row"><img src="/desktop/xian.png" class="img-responsive center-block" style="height: 1px;"></div>
+
+<div class="modal fade" id="ios_qr" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 20px 20px 16px;">
+        <h4 class="modal-title" style="font-size:20px;">点击下方链接查看教程</h4>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="and_qr" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 20px 20px 16px;">
+	  </div>
+    </div>
+  </div>
+</div>
+
+ 
+    </div>
+ 
+<div class="container">
+    <header>
+      <h2>常见问题帮助中心</h2>
+    </header>
+   
+    <div class="faq-content tab-content">
+      <div class="tab-pane fade in active" id="faq-1">
+        <div class="panel-group" id="accordion1">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a1" aria-expanded="false" class="collapsed">什么是 Telegram？ 我能用它做些什么?</a> </h4>
+            </div>
+            <div id="collapse-a1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>Telegram是一款专注于速度和安全性的消息应用程序，它超快速，简单且免费。 您可以同时在所有设备上使用Telegram - 您的消息可以在任意数量的手机，平板电脑或计算机上无缝同步。 使用Telegram，您可以发送任何类型的消息，照片，视频和文件（文档，zip，mp3等），以及为多达100,000人或频道创建群组，以便向无限的受众群体进行广播。 您可以写入您的手机联系人，并按用户名查找人员。 因此，Telegram就像短信和电子邮件相结合 - 可以满足您的所有个人或业务消息需求。 除此之外，我们还支持端到端加密语音呼叫。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a2" class="collapsed" aria-expanded="false">Telegram是属于谁的？</a> </h4>
+            </div>
+            <div id="collapse-a2" class="panel-collapse collapse" aria-expanded="false">
+              <div class="panel-body">
+                <p>Telegram适用于所有想要快速可靠的消息和电话的人。业务用户和小型团队可能喜欢大型组，用户名，桌面应用程序和强大的文件共享选项。 由于Telegram组可以拥有多达100,000名成员，因此我们支持回复，提及和主题标签，这有助于维护秩序并保持大型社区的通信效率。您可以使用高级工具指定管理员，以帮助这些社区和平繁荣。公共团体可以由任何人加入，是讨论和收集反馈的强大平台。  <br>  </p>
+                <p>如果你更喜欢图片，Telegram有动画gif搜索，最先进的照片编辑器和一个开放的贴纸平台（在这里或这里找到一些很酷的贴纸）。更重要的是，您无需担心设备上的磁盘空间。借助Telegram的云支持和缓存管理选项，Telegram可以占用手机上几乎为零的空间。 那些寻求额外隐私的人应该检查我们的高级设置，而不是革命性的政策。如果你想要保密，可以尝试我们特定于设备的秘密聊天，并使用自毁消息，照片和视频 - 并使用额外的密码锁定您的应用。如果你更喜欢图片，Telegram有动画gif搜索，最先进的照片编辑器和一个开放的贴纸平台（在这里或这里找到一些很酷的贴纸）。更重要的是，您无需担心设备上的磁盘空间。借助Telegram的云支持和缓存管理选项，Telegram可以占用手机上几乎为零的空间。 那些寻求额外隐私的人应该检查我们的高级设置，而不是革命性的政策。如果你想要保密，可以尝试我们特定于设备的秘密聊天，并使用自毁消息，照片和视频 - 并使用额外的密码锁定您的应用。</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a3" class="collapsed" aria-expanded="false">Telegram与WhatsApp有什么不同？</a> </h4>
+            </div>
+            <div id="collapse-a3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>与WhatsApp不同，Telegram是一种基于云的信使，具有无缝同步功能。 因此，您可以同时从多个设备访问您的消息，包括平板电脑和计算机，并共享无限数量的照片，视频和文件（doc，zip，mp3等），每个最多1.5 GB。 如果您不想将所有数据存储在设备上，您可以随时将其保存在云端。 由于我们的多数据中心基础设施和加密，Telegram更快，更安全。 最重要的是，Telegram是免费的，将免费 - 没有广告，没有订阅费，永远。 我们的API是开放的，我们欢迎开发人员创建自己的Telegram应用程序。 我们还有一个Bot API，一个开发人员平台，允许任何人轻松地为Telegram构建专用工具，集成任何服务，甚至接受来自世界各地用户的付款。 这只是冰山一角。 不要忘记查看这一段，以获得更独特的东西。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a4" class="collapsed" aria-expanded="false">Telegram多大了？</a> </h4>
+            </div>
+            <div id="collapse-a4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>iOS的Telegram于2013年8月14日推出.Android的Android版本于2013年10月20日正式推出。越来越多的Telegram客户端出现，由独立开发人员使用Telegram的开放平台构建。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a5" class="collapsed" aria-expanded="false">Telegram可在我的设备上使用吗？</a> </h4>
+            </div>
+            <div id="collapse-a5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>您可以在智能手机，平板电脑甚至计算机上使用Telegram。 我们有适用于iOS（6及以上），Android（4.1及以上版本）及Windows Phone的应用程序。 您还可以使用Telegram的Web版本或安装我们的Windows，OSX和Linux桌面应用程序之一。 您可以根据需要从任意数量的设备登录电报 - 所有这些都可以同时登录。 只需使用您的主要手机号码即可登录。 如果您想为其他平台构建自己的应用程序，我们的API对开发人员开放。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a6" class="collapsed" aria-expanded="false">Telegram创始人是谁？</a> </h4>
+            </div>
+            <div id="collapse-a6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>Telegram由Pavel和Nikolai Durov支持。 帕奎尔在经济和意识形态上支持电报，而尼古拉的投入是技术性的。 为了使Telegram成为可能，Nikolai开发了一种独特的自定义数据协议，该协议是开放，安全和优化的，适用于多个数据中心。 因此，Telegram将安全性，可靠性和速度结合在任何网络上Telegram由Pavel和Nikolai Durov支持。 帕奎尔在经济和意识形态上支持电报，而尼古拉的投入是技术性的。 为了使Telegram成为可能，Nikolai开发了一种独特的自定义数据协议，该协议是开放，安全和优化的，适用于多个数据中心。 因此，Telegram将安全性，可靠性和速度结合在任何网络上</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a7" class="collapsed" aria-expanded="false">Telegram在哪里？</a> </h4>
+            </div>
+            <div id="collapse-a7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>Telegram开发团队位于迪拜。 Telegram背后的大多数开发人员最初来自圣彼得堡，这个城市以其前所未有的高技能工程师而闻名。 由于当地的IT法规，Telegram团队不得不离开俄罗斯，并尝试了多个地点作为其基地，包括柏林，伦敦和新加坡。 我们目前对迪拜感到满意，但如果当地法规发生变化，我们已准备好再次搬迁。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a8" class="collapsed" aria-expanded="false">用户在使用Telegram时会需要发送短信进行验证，验证方法如下：</a> </h4>
+            </div>
+            <div id="collapse-a8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>第一步:在短信验证页面中点击“快速发送”，进入手机短信编辑界面，短信内容会自动填充。</p>
+				<p>第二步:发送完成后，填入验证短信即可登录。</p>
+				<p>发送短信后系统不会进行任何回复，由此产生的短信费由运营商收取，Telegram不会收取任何费用。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse-a9" class="" aria-expanded="true">如何下载Telegram最新版？</a> </h4>
+            </div>
+            <div id="collapse-a9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <p>请至官网  选择对应版本下载</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        </div>
+      </div>
+
+<footer>
+<div class="footer-link">
+</div>
+<div class="footer-text">Copyright 2016-2022  All Rights Reserved</div>
+<a href=""><img src="/desktop/appstore-ico.png" alt="App Store" class="footer-appdl" style="margin-right: 30px;"></a>
+<a href=""><img src="/desktop/playstore-ico.png" alt="Google Play" class="footer-appdl"></a>
+</footer>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://web.dcboxs.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '42']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</body>
+</html>
